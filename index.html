@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body class="content">
+
+    
+        <div class="modalLog">
+            <h2><span class="firstLet">W</span>elcome Back...</h2>
+        </div>
+
+        <!--Login Button-->
+            <button class="loginBtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <!--Login Button End-->
+     
+
+        <!--Modal Section-->
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+             <!--Modal Image Section-->
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="coolDog.png" alt="Avatar" class="avatar">
+                </div>
+            <!--Modal Image Section End-->
+
+            <!--Modal Body Section-->
+                <div class="container">
+            <!--Modal Enter Username Section-->
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            <!--Modal Enter Username Section End-->
+
+            <!--Modal Enter Password Section-->
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+            <!--Modal Enter Password Section End-->
+
+            <!--Modal Login Button Section-->
+                  <button type="submit">Login</button>
+            <!--Modal Login Button Section End-->
+
+            <!--Modal Remember Me CheckBox Section-->
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+            <!--Modal Remember Me CheckBox Section-->
+                </div>
+            <!--Modal Body Section End-->
+
+            <!--Modal Footer Section-->
+                <div class="footer">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            <!--Modal Footer Section End-->
+              </form>
+            </div>
+        <!--Modal Section End-->
+      
+                    
+       
+        
+        <script src="script.js" ></script>
+    </body>
+</html>
